@@ -1,0 +1,15 @@
+num_list = [422, 136, 524, 85, 96, 719, 85, 92, 10, 17, 312, 542, 87, 23, 86, 191, 116, 35, 173, 45, 149, 59, 84, 69,
+            113, 166]
+
+count = 0
+total = 0
+N = 5  # stop this loop after "N" number.
+
+for i in num_list:
+    if not (i % 2 == 0):
+        if count < N:
+            print("odd : {}".format(i))
+            total += i
+            count += 1
+
+print("total : {}".format(total))
